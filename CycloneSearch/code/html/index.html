@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="cyclonesearch" content="width=device-width< initial-scale=1.0">
+        <title>气旋搜寻网</title>
+		<link rel="stylesheet" href="../css/default_page.css">
+    </head>
+    <body>
+		<header class="nav_header">
+			<h1 class="nav_logo">气旋搜寻网</h1>
+			<nav>
+				<ul>
+					<li><a href="TC.html">热带气旋/副热带气旋列表</a></li>
+					<li><a href="EXC.html">温带气旋列表</a></li>
+					<li><a href="ALLC.html">全种类气旋列表</a></li>
+					<!-- <li><a href="SPONSOR.html">赞助入口</a></li> -->
+					<li><a href="HISTORYC.html">公告</a></li>
+				</ul>
+			</nav>
+		</header>
+        <main>
+			<!-- 弹窗代码开始 -->
+			<div class="web_notice" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3); z-index: 99999;">
+			    <div style="position: fixed; top: 50%; left: 50%; width: 320px; background: #FFF; transform: translate(-50%, -50%); border-radius: 40px; padding: 50px 40px;">
+			        <button style="position: absolute; top: 10px; right: 10px; background: none; border: none; font-size: 20px; cursor: pointer;" onclick="closePopup();">×</button>
+			        <h3 style="font-weight: bold; text-align: center; font-size: 30px;">网站通知</h3>
+			        <div style="font-size: 16px; margin-top: 26px; line-height: 30px; color: #999;">
+			            公告内容：网站第一次测试准备开始！<br>本次测试从2025年1月1日开始至2月28日结束<br>
+			        </div>
+			    </div>
+			</div>
+			<!-- 弹窗代码结束 -->
+			<section class="start">
+				<h1>Cyclone Search!</h1>
+				<h2>气旋查找网站中的最佳选择！</h2>
+			</section>
+			<section class="slogan">
+				<blockquote>无论是台风，飓风，气旋风暴还是旋风<br>无论是热带气旋，副热带气旋还是温带气旋<br>都可以在这里找到！</blockquote>
+			</section>
+			<ul>
+				<li><a href="TC.html">热带气旋/副热带气旋列表</a></li>
+				<li><a href="EXC.html">温带气旋列表</a></li>
+			</ul>
+			<h1>实时云图</h1>
+			<iframe src="https://www.rainviewer.com/hurricane-map.html?loc=15.176,-123.7235,4.952631756715427&layer=sat&hu=1" width="100%" frameborder="0" style="border:0;height:50vh;" allowfullscreen></iframe>
+		</main>
+		<footer>
+			<p>Copyright 2024 Cyclone Search All Right Reserved</p>
+		</footer>
+		<script>
+		    function closePopup() {
+		        document.querySelector('.web_notice').style.display = 'none';
+		    }
+		</script>
+    </body>
+</html>
